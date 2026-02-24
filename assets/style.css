@@ -439,24 +439,26 @@ a:focus-visible {
 }
 
 .hero-dots .dot {
-  width: 44px;
-  height: 44px;
+  width: 22px;
+  height: 14px;
   padding: 0;
-  display: grid;
   border: 0;
   background: transparent;          
   cursor: pointer;
   position: relative;
-  place-items: center;
 }
 
 .hero-dots .dot::before{
   content: "";
-  transition: all 0.2s ease;
-  width: 10px;
-  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 8px;
+  height: 8px;
   border-radius: 999px;
   background: rgba(255,255,255,0.85);
+  transition: all .2s ease;
 }
 
 .hero-dots .dot.is-active::before{
