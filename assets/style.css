@@ -44,6 +44,7 @@ body {
 
 #about {
 	display: flex;
+	align-items: center;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -62,13 +63,17 @@ body {
 }
 
 .picture {
-	flex: 1;
+	flex: 0 0 374px;
+	position: relative;
 	margin: 0 20px;
 	z-index: 0;
 }
 
 .picture img {
 	width: 100%;
+	aspect-ratio: 374 / 329;
+	object-fit: cover;
+	display: block;
 
 }
 #about-me {
